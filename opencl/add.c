@@ -210,7 +210,7 @@ int main(int argc, char *argv[])
         fprintf(stderr, "clEnqueueWriteBuffer: %d\n", (int)err);
         return 1;
     }
-    err = clEnqueueWriteBuffer(queue, bufA, CL_FALSE, 0, sizeof(b), b, 0, NULL, NULL);
+    err = clEnqueueWriteBuffer(queue, bufB, CL_FALSE, 0, sizeof(b), b, 0, NULL, NULL);
     if (err != CL_SUCCESS) {
         fprintf(stderr, "clEnqueueWriteBuffer: %d\n", (int)err);
         return 1;
