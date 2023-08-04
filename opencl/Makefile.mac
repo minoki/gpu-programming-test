@@ -1,0 +1,7 @@
+all: list add
+
+list: list.c
+	clang -Wall -o $@ $< -framework OpenCL
+
+add: add.c
+	clang -Wall -o $@ $< -framework OpenCL
