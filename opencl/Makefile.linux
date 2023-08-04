@@ -1,0 +1,7 @@
+all: list add
+
+list: list.c
+	gcc -Wall -o $@ $< -lOpenCL
+
+add: add.c
+	gcc -Wall -o $@ $< -lOpenCL
